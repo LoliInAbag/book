@@ -21,9 +21,9 @@
                 <div class="pull-right">
                     @Html.HiddenFor(x => x.BookId)
                     @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
-
-                    <img height= "240" src="@Model.Description" /> 
+                                      
                     <input type="submit" class="btn btn-success" value="В корзину"/>
+                    <img height="240" src="@Model.Description" /> 
                 </div>
             }
         </div>

@@ -8,7 +8,7 @@
 
 .navbar-right {
     float: right !important;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-left: 15px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .input-validation-error {
-    border: 1px solid #f00;
+    border: 10px solid #f00;
     background-color: #fee;
 }
 
@@ -29,7 +29,20 @@
     font-weight: bold;
     color: #f00;
 }
+.pull-right{
+     max-width: 100% !important;
+}
 
 .validation-summary-valid {
     display: none;
+}
+.btn-group pull-right {
+    margin-right: 10000px;
+}
+.form-group.label{
+    Background:aquamarine;
+    
+}
+{
+margin-left: 1000px
 }
