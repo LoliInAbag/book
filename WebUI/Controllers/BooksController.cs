@@ -11,7 +11,7 @@ namespace WebUI.Controllers
     public class BooksController : Controller
     {
         private IBookRepository repository;
-        public int pageSize = 4;
+        public int pageSize = 15;
 
         public BooksController(IBookRepository repo)
         {

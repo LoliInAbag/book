@@ -31,18 +31,29 @@
 }
 .pull-right{
      max-width: 100% !important;
+     margin-left: 100px;
+}
+.col-xs-3 {
+    margin-right: 300px;
 }
 
 .validation-summary-valid {
     display: none;
 }
-.btn-group pull-right {
-    margin-right: 10000px;
+.pull-right  img {
+    border:groove;
+ 
 }
-.form-group.label{
+.form-group label{
     Background:aquamarine;
     
 }
-{
-margin-left: 1000px
+ .col-xs-9 strong{
+font-weight:inherit;
+}
+.well  {
+margin-left: 10px;
+}
+.navbar-inverse {
+    background-color:aquamarine;
 }
