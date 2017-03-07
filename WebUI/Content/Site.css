@@ -40,7 +40,7 @@
 .validation-summary-valid {
     display: none;
 }
-.pull-right  img {
+.pull-right img {
     border:groove;
  
 }
@@ -56,4 +56,11 @@ margin-left: 10px;
 }
 .navbar-inverse {
     background-color:aquamarine;
+}
+.col-xs-9 {
+    margin-left:5px;
+
+}
+.img {
+margin-left: 50px;
 }
