@@ -32759,13 +32759,13 @@ DECLARE @xml xml
  
 Insert into Books select 
 
-   t.n.value(N'(title)[1]',N'nvarchar(max)') as name,
-   t.n.value(N'(artist)[1]',N'nvarchar(max)') as author,
-   t.n.value(N'(picture)[1]', N'nvarchar(max)') as  description,
-     t.n.value(N'(genre)[1]', N'nvarchar(max)') as genre, 
-   t.n.value(N'(price)[1]', N'decimal (18,2)') as price , 
-    t.n.value(N'(year)[1]', N'nvarchar(max)') as year, 
-   t.n.value(N'(description)[1]', N'nvarchar(max)') as picture ,
-   t.n.value(N'(url)[1]', N'nvarchar(max)') as url  
+   t.n.value(N'(title)[1]','nvarchar(max)') as name,
+   t.n.value(N'(artist)[1]','nvarchar(max)') as author,
+   t.n.value(N'(picture)[1]','nvarchar(max)') as  description,
+     t.n.value(N'(genre)[1]','nvarchar(max)') as genre, 
+   t.n.value(N'(price)[1]','decimal (18,2)') as price , 
+    t.n.value(N'(year)[1]','nvarchar(max)') as year, 
+   t.n.value(N'(description)[1]','nvarchar(max)') as picture ,
+   t.n.value(N'(url)[1]','nvarchar(max)') as url  
 
 from @xml.nodes('/yml_catalog/shop/offers/offer') t(n)
