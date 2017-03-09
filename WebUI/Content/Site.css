@@ -31,36 +31,22 @@
 }
 .pull-right{
      max-width: 100% !important;
-     margin-left: 100px;
-}
-.col-xs-3 {
-    margin-right: 300px;
 }
 
 .validation-summary-valid {
     display: none;
 }
-.pull-right img {
-    border:groove;
- 
+.btn-group pull-right {
+    margin-right: 10px;
 }
-.form-group label{
+.form-group.label{
     Background:aquamarine;
     
 }
- .col-xs-9 strong{
-font-weight:inherit;
-}
-.well  {
-margin-left: 10px;
-}
-.navbar-inverse {
-    background-color:aquamarine;
-}
-.col-xs-9 {
-    margin-left:5px;
-
-}
 .img {
-margin-left: 50px;
+margin-right:20px;
+margin-top:10px;
+}
+col-xs-9 strong {
+    font-weight:900;
 }

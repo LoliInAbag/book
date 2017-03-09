@@ -4,32 +4,29 @@
     <div class="row">
         <div class="col-xs-9">
             <h3>
-              <strong>@Model.Author</strong>
+                <strong>@Model.Name</strong>
             </h3>
             <h4>
-                <strong>@Model.Name</strong>
+                <strong>@Model.Author</strong>
             </h4>
         </div>
         <div class="col-xs-3">
-            
+                      
             @using (Html.BeginForm("AddToCart", "Cart"))
             {
                 <div class="pull-right">
                     @Html.HiddenFor(x => x.BookId)
                     @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+
                     <h3>
-                        <strong id="price" class="pull-right label label-primary">
-                            @Model.Price.ToString("# руб")
-                        </strong>
-                        <input type="submit" class="btn btn-success" value="В корзину" />
-                    </h3>             
-                   
-                        <div class="img">
-                            <img  src="@Model.Description" width="150" height="150" alt="обложка" /> 
-                        </div>
+                        <strong id="price" class="pull-right label label-primary">@Model.Price.ToString("# руб")</strong> <input type="submit" class="btn btn-success" value="В корзину" />
+                    </h3>
+                    <div class="img">
+                        <img width="150" height="150" src="@Model.Description" />
+                    </div>
                 </div>
             }
         </div>
     </div>
-    <span class="lead">@Model.Description</span>
+    <!--<span class="lead">@Model.Description</span>-->
 </div>
