@@ -23,7 +23,7 @@ namespace Domain.Entities
         public string Author { get; set; }
 
         [DataType(DataType.MultilineText)]
-        [Display(Name = "Описание")]
+        [Display(Name = "Изображение")]
         [Required(ErrorMessage = "Пожалуйста, введите описание книги")]
         public string Description { get; set; }
 
@@ -31,18 +31,27 @@ namespace Domain.Entities
         [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
         public string Genre { get; set; }
 
-      /* [Display(Name = "Жанр")]
-        [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
-        public string year { get; set; }
-
-       /* [Display(Name = "Жанр")]
-        [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+        [Display(Name = "Описание")]
         public string picture { get; set; }
 
-        [Display(Name = "Жанр")]
-        [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+        [Display(Name = "Год")]
+        public int year { get; set; }
+
+        [Display(Name = "адрес")]
         public string url { get; set; }
-        */
+
+        /* [Display(Name = "Жанр")]
+          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+          public string year { get; set; }
+
+         /* [Display(Name = "Жанр")]
+          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+          public string picture { get; set; }
+
+          [Display(Name = "Жанр")]
+          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+          public string url { get; set; }
+          */
         [Display(Name = "Цена (руб)")]
         [Required]
         [Range(0.01,double.MaxValue,ErrorMessage = "Пожалуйста, введите положительное значение цены")]

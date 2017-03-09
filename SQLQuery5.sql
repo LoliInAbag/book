@@ -35,7 +35,7 @@ DECLARE @xml xml
         <title>Lacuna Coil. Karmacode</title>
         <year>2010</year>
         <media>Audio CD</media>
-        <description>Издание содержит буклет с фотографиями, текстами песен и дополнительной информацией на английском языке.</description>
+        <description> ывфы  Издание содержит буклет с фотографиями, текстами песен и дополнительной информацией на английском языке.</description>
         <sales_notes>Бесплатная доставка при заказе от 3500 рублей</sales_notes>
         <barcode>5051099766020</barcode>
         <weight>0.105</weight>

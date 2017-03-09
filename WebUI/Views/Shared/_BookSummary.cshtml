@@ -19,7 +19,7 @@
                     @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
 
                     <h3>
-                        <strong id="price" class="pull-right label label-primary">@Model.Price.ToString("# руб")</strong> <input type="submit" class="btn btn-success" value="В корзину" />
+                        <strong id="price" class="pull-right label label-primary">@Model.Price.ToString("# руб")</strong>  <input type="submit" class="btn btn-success" value="В корзину" />
                     </h3>
                     <div class="img">
                         <img width="150" height="150" src="@Model.Description" />
@@ -28,5 +28,5 @@
             }
         </div>
     </div>
-    <!--<span class="lead">@Model.Description</span>-->
+    <span class="lead">@Model.picture @Model.url @Model.year</span>
 </div>

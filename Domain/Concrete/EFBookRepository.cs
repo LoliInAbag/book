@@ -33,7 +33,10 @@ namespace Domain.Concrete
                     dbEntry.Description = book.Description;
                     dbEntry.Genre = book.Genre;
                     dbEntry.Price = book.Price;
-                  
+                    dbEntry.picture = book.picture;
+                    dbEntry.year = book.year;
+                    dbEntry.url = book.url;
+
                 }
             }
             context.SaveChanges();

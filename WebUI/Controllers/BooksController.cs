@@ -18,7 +18,7 @@ namespace WebUI.Controllers
             repository = repo;
         }
 
-        public ViewResult List(string genre, int page = 1)
+        public ViewResult List(string genre, int page =10)
         {
             BooksListViewModel model = new BooksListViewModel
             {
