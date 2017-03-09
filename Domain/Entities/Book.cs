@@ -31,30 +31,31 @@ namespace Domain.Entities
         [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
         public string Genre { get; set; }
 
-        [Display(Name = "Описание")]
-        public string picture { get; set; }
-
-        [Display(Name = "Год")]
-        public int year { get; set; }
-
-        [Display(Name = "адрес")]
-        public string url { get; set; }
-
-        /* [Display(Name = "Жанр")]
-          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
-          public string year { get; set; }
-
-         /* [Display(Name = "Жанр")]
-          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
-          public string picture { get; set; }
-
-          [Display(Name = "Жанр")]
-          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
-          public string url { get; set; }
-          */
         [Display(Name = "Цена (руб)")]
         [Required]
-        [Range(0.01,double.MaxValue,ErrorMessage = "Пожалуйста, введите положительное значение цены")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Пожалуйста, введите положительное значение цены")]
         public decimal Price { get; set; }
+        /*  [Display(Name = "Описание")]
+          public string picture { get; set; }
+
+          [Display(Name = "Год")]
+          public int year { get; set; }
+
+          [Display(Name = "адрес")]
+          public string url { get; set; }
+
+          /* [Display(Name = "Жанр")]
+            [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+            public string year { get; set; }
+
+           /* [Display(Name = "Жанр")]
+            [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+            public string picture { get; set; }
+
+            [Display(Name = "Жанр")]
+            [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+            public string url { get; set; }
+            */
+
     }
 }
