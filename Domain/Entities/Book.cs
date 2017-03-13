@@ -39,10 +39,10 @@ namespace Domain.Entities
           public string picture { get; set; }
 
           [Display(Name = "Год")]
-          public int year { get; set; }
+          public int year { get; set; }*/
 
-          [Display(Name = "адрес")]
-          public string url { get; set; }*/
+        [Display(Name = "адрес")]
+          public string url { get; set; }
 
            [Display(Name = "Год")]
             [Required(ErrorMessage = "Пожалуйста, укажите год произведения")]
@@ -52,10 +52,15 @@ namespace Domain.Entities
             [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
             public string picture { get; set; }
 
-          /*  [Display(Name = "Жанр")]
-            [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
-            public string url { get; set; }
-            */
+        public string dimensions { get; set; }
+        public string weight { get; set; }
+        public string barcode { get; set; }
+        public string media { get; set; }
+
+        /*  [Display(Name = "Жанр")]
+          [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+          public string url { get; set; }
+          */
 
     }
 }

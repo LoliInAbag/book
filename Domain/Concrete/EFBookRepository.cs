@@ -35,9 +35,12 @@ namespace Domain.Concrete
                     dbEntry.Price = book.Price;
                     dbEntry.picture = book.picture;
                     dbEntry.year = book.year;
-                   // dbEntry.url = book.url;
-
-                }
+                    dbEntry.url = book.url;
+                    dbEntry.dimensions = book.dimensions;
+                    dbEntry.weight = book.weight;
+                    dbEntry.barcode = book.barcode;
+                    dbEntry.media = book.media;
+    }
             }
             context.SaveChanges();
         }

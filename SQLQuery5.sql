@@ -1,6 +1,7 @@
 ﻿
 DECLARE @xml xml
-	set @xml=   '   
+	set @xml= '
+	
 <yml_catalog date="2017-02-27 11:33">
   <shop>
     <name>OZON.ru</name>
@@ -32766,6 +32767,11 @@ Insert into Books select
    t.n.value(N'(price)[1]','decimal (18,2)') as price , 
     t.n.value(N'(year)[1]','nvarchar(max)') as year, 
    t.n.value(N'(description)[1]','nvarchar(max)') as picture ,
-   t.n.value(N'(url)[1]','nvarchar(max)') as url  
+   t.n.value(N'(url)[1]','nvarchar(max)') as url,    
+     t.n.value(N'(dimensions)[1]','nvarchar(max)') as dimensions, 
+	 t.n.value(N'(weight)[1]','nvarchar(max)') as weight, 
+	 t.n.value(N'(barcode)[1]','nvarchar(max)') as barcode, 
+	 t.n.value(N'(media)[1]','nvarchar(max)') as media
+
 
 from @xml.nodes('/yml_catalog/shop/offers/offer') t(n)

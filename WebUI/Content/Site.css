@@ -39,17 +39,25 @@
 .btn-group pull-right {
     margin-right: 10px;
 }
-.form-group.label{
+.form-group label{
     Background:aquamarine;
     
 }
 .img {
 margin-right:20px;
 margin-top:10px;
+float:left;
 }
 col-xs-9 strong {
     font-weight:900;
 }
 .navbar navbar-inverse {
 background-color:cornsilk;
+}
+.well a {
+    color:black;
+}
+.pull-right label label-primary {
+    margin-left:auto;
+
 }
