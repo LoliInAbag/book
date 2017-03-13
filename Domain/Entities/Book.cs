@@ -42,17 +42,17 @@ namespace Domain.Entities
           public int year { get; set; }
 
           [Display(Name = "адрес")]
-          public string url { get; set; }
+          public string url { get; set; }*/
 
-          /* [Display(Name = "Жанр")]
-            [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
+           [Display(Name = "Год")]
+            [Required(ErrorMessage = "Пожалуйста, укажите год произведения")]
             public string year { get; set; }
 
-           /* [Display(Name = "Жанр")]
+           [Display(Name = "Описание")]
             [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
             public string picture { get; set; }
 
-            [Display(Name = "Жанр")]
+          /*  [Display(Name = "Жанр")]
             [Required(ErrorMessage = "Пожалуйста, укажите жанр произведения")]
             public string url { get; set; }
             */

@@ -2,14 +2,16 @@
 
 <div class="well">
     <div class="row">
+
         <div class="col-xs-9">
+            <h4>
+                <strong>@Model.Author @Model.year</strong>
+            </h4>
             <h3>
                 <strong>@Model.Name</strong>
-            </h3>
-            <h4>
-                <strong>@Model.Author</strong>
-            </h4>
+            </h3>          
         </div>
+
         <div class="col-xs-3">
                       
             @using (Html.BeginForm("AddToCart", "Cart"))
@@ -28,5 +30,5 @@
             }
         </div>
     </div>
-    <!--<span class="lead">@Model.Description</span>-->
+    <span class="lead">@Model.picture</span>
 </div>
