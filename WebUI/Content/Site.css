@@ -50,3 +50,6 @@ margin-top:10px;
 col-xs-9 strong {
     font-weight:900;
 }
+.navbar navbar-inverse {
+background-color:cornsilk;
+}

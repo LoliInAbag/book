@@ -15,7 +15,7 @@ namespace Domain.Entities
         public int BookId { get; set; }
 
         [Display(Name="Название")]
-        [Required(ErrorMessage="Пожалуйста, введите название книги")]
+        [Required(ErrorMessage="Пожалуйста, введите название музыки")]
         public string Name { get; set; }
 
         [Display(Name = "Автор")]
@@ -24,7 +24,7 @@ namespace Domain.Entities
 
         [DataType(DataType.MultilineText)]
         [Display(Name = "Изображение")]
-        [Required(ErrorMessage = "Пожалуйста, введите описание книги")]
+        [Required(ErrorMessage = "Пожалуйста, введите описание музыки")]
         public string Description { get; set; }
 
         [Display(Name = "Жанр")]

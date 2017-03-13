@@ -134,7 +134,7 @@ namespace UnitTests
             Assert.AreEqual(cart.Lines.ToList()[0].Book.BookId, 1);
         }
 
-        // После добавления книги в корзину - перенаправление на страницу корзины
+        // После добавления CD в корзину - перенаправление на страницу корзины
         [TestMethod]
         public void Adding_Book_To_Cart_Goes_To_Cart_Screen()
         {
