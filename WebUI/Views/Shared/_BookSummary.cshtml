@@ -12,10 +12,10 @@
             </h3>
         </div>
 
-        
+
         <div class="col-xs-3">
 
-         
+
         </div>
         @using (Html.BeginForm("AddToCart", "Cart"))
             {
@@ -25,14 +25,26 @@
 
                 <h3>
                     <input type="submit" class="btn btn-success" value="В корзину" />
-                    <strong id="price" class="pull-right label label-primary" >@Model.Price.ToString("# руб")</strong> 
+                    <strong id="price" class="pull-right label label-primary">@Model.Price.ToString("# руб")</strong>
                 </h3>
                 <div class="img">
-                    <img width="150" height="150" src="@Model.Description" />
+                    <img width="200" height="200" src="@Model.Description" />
                 </div>
-                <span class="lead">@Model.picture</span><br><br><br>
+
             </div>
         }
+        <span class="lead">@Model.picture</span><br><br>
+        <a> Информация: </a><br>
+        <a> Жанр: @Model.Genre </a><br>
+        <a> Автор: @Model.Name </a><br>
+        <a>Год издания:@Model.year </a><br>
+        <a>Габариты:@Model.dimensions </a><br>
+        <a>Бар-код:@Model.barcode </a><br>
+        <a>Тип CD:@Model.media </a><br>       
+        <a>Вес:@Model.weight </a><br>
+
+        <a href="@Model.url">Магазин партнеров </a><br>
+
     </div>
-    
+
 </div>

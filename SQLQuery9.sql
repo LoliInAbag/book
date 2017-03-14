@@ -1,1 +1,1 @@
-﻿drop table Books
+﻿delete from Books
